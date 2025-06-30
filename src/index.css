@@ -1,0 +1,341 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar - Dark theme to match navbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #374151, #1f2937);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #4b5563, #374151);
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #374151 #1f2937;
+}
+
+/* Ensure fonts are applied correctly */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom animation classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Custom gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #6C63FF, #FF6347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Button hover effects */
+.btn-hover-scale {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Custom color utilities */
+.text-tomato {
+  color: #FF6347;
+}
+
+.bg-tomato {
+  background-color: #FF6347;
+}
+
+.border-tomato {
+  border-color: #FF6347;
+}
+
+.text-deep-purple {
+  color: #6C63FF;
+}
+
+.bg-deep-purple {
+  background-color: #6C63FF;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Pulse animation with delay */
+@keyframes pulse-delayed {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-delayed {
+  animation: pulse-delayed 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation-delay: 1s;
+}
+
+/* Navbar backdrop blur effect */
+.navbar-blur {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* 3D button effect */
+.btn-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.btn-3d:hover {
+  transform: translateY(-2px) rotateX(5deg);
+}
+
+/* Gradient border effect */
+.gradient-border {
+  position: relative;
+  background: linear-gradient(135deg, #6C63FF, #FF6347);
+  border-radius: 12px;
+  padding: 2px;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: white;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+/* 3D Transform utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-gpu {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Enhanced 3D effects */
+.shadow-3d {
+  box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.12),
+    0 8px 16px rgba(0, 0, 0, 0.08),
+    0 16px 32px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-3d-hover {
+  transition: all 0.3s ease;
+}
+
+.shadow-3d-hover:hover {
+  box-shadow: 
+    0 8px 16px rgba(0, 0, 0, 0.15),
+    0 16px 32px rgba(0, 0, 0, 0.1),
+    0 32px 64px rgba(0, 0, 0, 0.06);
+  transform: translateY(-4px);
+}
+
+/* Smooth floating animation for 3D elements */
+@keyframes float3d {
+  0%, 100% {
+    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
+  33% {
+    transform: translateY(-10px) rotateX(5deg) rotateY(2deg);
+  }
+  66% {
+    transform: translateY(5px) rotateX(-3deg) rotateY(-2deg);
+  }
+}
+
+.animate-float3d {
+  animation: float3d 8s ease-in-out infinite;
+}
+
+/* Parallax smooth transitions */
+.parallax-smooth {
+  will-change: transform;
+  transition: transform 0.1s ease-out;
+}
+
+/* Glow effects for 3D elements */
+.glow-purple {
+  box-shadow: 0 0 20px rgba(108, 99, 255, 0.3);
+}
+
+.glow-tomato {
+  box-shadow: 0 0 20px rgba(255, 99, 71, 0.3);
+}
+
+/* Onboarding specific styles */
+.onboarding-step-enter {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.onboarding-step-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.onboarding-step-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.onboarding-step-exit-active {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Accessibility focus styles */
+.focus-visible-ring {
+  @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2196F3] focus-visible:ring-opacity-50;
+}
+
+/* Touch-friendly elements */
+@media (max-width: 768px) {
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Onboarding layout specific styles */
+.onboarding-content {
+  min-height: calc(100vh - 250px); /* Adjust based on header + footer height */
+}
+
+/* Ensure content is always visible above the fixed footer */
+.onboarding-card-container {
+  padding-bottom: 100px; /* Ensure enough space for the fixed footer */
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .onboarding-card-container {
+    padding-bottom: 80px; /* Smaller padding on mobile */
+  }
+}
+
+/* Remove spinner buttons from number inputs */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* For Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Center step indicator on mobile */
+@media (max-width: 640px) {
+  .step-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+/* Custom scrollbar for calendar entries */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
