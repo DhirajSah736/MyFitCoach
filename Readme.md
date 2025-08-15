@@ -2,6 +2,7 @@
 
 **MyFitCoach** is an AI-powered fitness coaching web application designed to help users achieve their health and wellness goals.  
 It combines personalized workout and nutrition tracking with interactive AI coaching, goal planning, and progress monitoring — all in one platform.
+![Preview](public/image/MyFitCoach-image-2.png)
 
 🌐 **Live Demo:** [www.myfitcoach.org](http://www.myfitcoach.org)
 
