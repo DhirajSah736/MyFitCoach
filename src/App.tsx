@@ -362,19 +362,9 @@ function HomePage() {
           }}
         ></div>
         
-        {/* Bolt.new badge */}
-        <a 
-          href="https://bolt.new/" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="absolute top-24 right-24 z-20 transition-transform duration-300 hover:scale-105"
-        >
-          <img 
-            src="/white_circle_360x360.png" 
-            alt="Powered by Bolt.new" 
-            className="w-16 h-16 md:w-20 md:h-20"
-          />
-        </a>
+        {/*  badge  below*/}
+    
+        
         
         {/* Content Container */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -683,7 +673,7 @@ function HomePage() {
               <span className="text-gray-400 text-center">Designed and developed by Dhiraj Sah</span>
               <div className="flex space-x-3">
                 <a 
-                  href="https://github.com/DhirajSah736" 
+                  href="https://github.com/dhirajsah26" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="GitHub Profile"
@@ -692,7 +682,7 @@ function HomePage() {
                   <Github className="w-5 h-5" />
                 </a>
                 <a 
-                  href="https://www.linkedin.com/in/dhiraj-sah-7a3522220/" 
+                  href="https://linkedin.com/in/dhirajsah" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="LinkedIn Profile"
@@ -701,7 +691,7 @@ function HomePage() {
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a 
-                  href="https://www.dhirajsah99.com.np" 
+                  href="https://dhirajsah.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Personal Portfolio"

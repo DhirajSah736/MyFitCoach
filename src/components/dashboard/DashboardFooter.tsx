@@ -17,7 +17,7 @@ const DashboardFooter: React.FC = () => {
             
             <div className="flex items-center justify-center space-x-3">
               <a 
-                href="https://github.com/DhirajSah736" 
+                href="https://github.com/dhirajsah26" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="GitHub Profile"
@@ -26,7 +26,7 @@ const DashboardFooter: React.FC = () => {
                 <Github size={16} />
               </a>
               <a 
-                href="https://www.linkedin.com/in/dhiraj-sah-7a3522220/" 
+                href="https://linkedin.com/in/dhirajsah" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="LinkedIn Profile"
@@ -35,7 +35,7 @@ const DashboardFooter: React.FC = () => {
                 <Linkedin size={16} />
               </a>
               <a 
-                href="https://www.dhirajsah99.com.np" 
+                href="https://dhirajsah.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="Personal Portfolio"
