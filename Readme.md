@@ -11,7 +11,7 @@ It combines personalized workout and nutrition tracking with interactive AI coac
 
 | **Mobile View** | **Desktop View** |
 |-----------------|------------------|
-| ![Mobile Preview](assets/screenshots/mobile-view.png) | ![Desktop Preview](assets/screenshots/desktop-view.png) |
+| ![Mobile Preview](public/image/myfitcoach-mobile.jpg) | ![Desktop Preview](public/image/myfitcoach-desktop.jpg) |
 
 ## 🚀 Features
 
