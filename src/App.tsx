@@ -673,7 +673,7 @@ function HomePage() {
               <span className="text-gray-400 text-center">Designed and developed by Dhiraj Sah</span>
               <div className="flex space-x-3">
                 <a 
-                  href="https://github.com/dhirajsah26" 
+                  href="https://github.com/DhirajSah736" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="GitHub Profile"
@@ -682,7 +682,7 @@ function HomePage() {
                   <Github className="w-5 h-5" />
                 </a>
                 <a 
-                  href="https://linkedin.com/in/dhirajsah" 
+                  href="https://www.linkedin.com/in/dhiraj-sah-tech/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="LinkedIn Profile"
@@ -691,7 +691,7 @@ function HomePage() {
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a 
-                  href="https://dhirajsah.com" 
+                  href="https://www.dhirajsah99.com.np" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Personal Portfolio"
